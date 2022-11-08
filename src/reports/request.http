@@ -1,0 +1,30 @@
+###Post request to create a report
+
+POST http://localhost:3000/reports/create
+Content-Type: application/json
+
+{
+    "make": "Toyota",
+    "model": "2021",
+    "price": 22000,
+    "year": 2013,
+    "mileage": 13000,
+    "lng": 5,
+    "lat": 5
+}
+
+
+### Patch to approve a report
+PATCH   http://localhost:3000/reports/13
+Content-Type: application/json
+
+{
+    "approved": true
+}
+
+### Get estimate
+Get http://localhost:3000/reports?make=Toyota&model=2021&year=2012&lng=3&lat=3&mileage=1000
+
+
+### Remove report
+Get http://localhost:3000/reports/remove/1

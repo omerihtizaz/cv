@@ -1,0 +1,47 @@
+POST http://localhost:3000/auth/signup
+Content-Type: application/json
+
+{
+    "name": "admin", 
+    "email": "admin@gmail.com",
+    "password": "admin"
+}
+
+###
+POST http://localhost:3000/auth/signin
+Content-Type: application/json
+
+{
+    "email": "admin@gmail.com",
+    "password": "admin"
+}
+
+###
+Post http://localhost:3000/auth/logout
+####
+# ###
+# Get http://localhost:3000/auth/colors/Red
+# ####
+# Get  http://localhost:3000/auth/getColors
+###
+
+Get http://localhost:3000/auth/whoami
+####
+Get http://localhost:3000/auth/findOne/10
+
+
+###
+Get http://localhost:3000/auth/find/Omer.Ihtizaz@gmail.com
+
+
+###
+PATCH  http://localhost:3000/auth/update/6
+Content-Type: application/json
+
+{
+    "email":"ahmed.tariq@hotmail.com"
+}
+
+
+### 
+Get http://localhost:3000/auth/remove/6
